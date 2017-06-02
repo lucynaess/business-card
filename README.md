@@ -43,3 +43,4 @@ License
 GNU GPLv3. See LICENSE file.
 
 © 2017 Olivier Pieters
+© 2017 Lucrèce Skylar Næss
