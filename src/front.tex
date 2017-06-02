@@ -26,7 +26,7 @@
 \newlength{\seplinedistance} \setlength{\seplinedistance}{0.3cm}
 
 % colour options
-\definecolor{seplinecolour}{HTML}{357f2d}  % green
+\definecolor{seplinecolour}{HTML}{a27696}  % dark pink?
 \definecolor{iconcolour}{HTML}{2f3142}     % dark
 \definecolor{textcolour}{HTML}{2f3142}     % dark
 \definecolor{jobtitlecolour}{HTML}{474a65} % light dark
@@ -69,8 +69,8 @@
     \begin{tikzpicture}
       % name
       \matrix[every node/.style={anchor=center,font=\huge},anchor=center] (name) {
-        \node{John}; \\
-        \node{Doe}; \\
+        \node{Lucr\`{e}ce}; \\
+        \node{N\ae ss}; \\
         \node{\color{jobtitlecolour}\normalsize\textit{job title}}; \\
       };
       % sep line 1
@@ -80,10 +80,10 @@
       \matrix [below=\seplinedistance of hl1,%
                column 1/.style={anchor=center,color=iconcolour},%
                column 2/.style={anchor=west}] (contact){
-        \node{\faGlobe}; & \node{johndoe.com};\\
-        \node{\faEnvelope}; &\node{me@johndoe.com};\\
-        \node{\faPhone}; &\node{+1 781 555 1212}; \\
-        \node{\faGithub}; &\node{johndoe}; \\
+        \node{\faGlobe}; & \node{lucynaess.github.io};\\
+        \node{\faEnvelope}; &\node{lucrecenaess@airmail.cc};\\
+        \node{\faKey}; &\node{keybase.io/lucrecenaess}; \\
+        \node{\faGithub}; &\node{github.com/lucynaess}; \\
       };
       % sep line 2
       \node[below=\seplinedistance of contact] (hl2) {};
@@ -92,9 +92,9 @@
       \matrix [below=\seplinedistance of hl2,
          every node/.style={anchor=center,font=\LARGE}]
          (interests) {
-        \node{\faCode}; & \node{\faCoffee}; &
-        \node{\faLock}; & \node{\faWrench}; &
-        \node{\faCameraRetro}; \\
+        \node{\faCode}; & \node{\faBtc}; &
+        \node{\faTransgender}; & \node{\faUserSecret}; &
+        \node{\faCamera}; \\
       }; 
     \end{tikzpicture}
   \end{center}

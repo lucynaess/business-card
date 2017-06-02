@@ -26,7 +26,7 @@
 \newlength{\logowidth}  \setlength{\logowidth}{0.5in}
 
 % define colours
-\definecolor{bordercolour}{HTML}{357f2d} % green
+\definecolor{bordercolour}{HTML}{a27696} % dark pink?
 \definecolor{textcolour}{HTML}{000000}   % black
 
 % change global colour
@@ -42,9 +42,9 @@
   \vspace*{\fill}
   \begin{tikzpicture}[remember picture,overlay,inner sep=0pt]
     \draw[fill=bordercolour!30,draw=bordercolour] (current page.center) ++(-\paperwidth/2+\edgemargin,\paperheight/2-\edgemargin) rectangle ++(\paperwidth-2*\edgemargin,-\paperheight+2*\edgemargin);
-    % logo
+    % Bitcoin Address
     \draw (current page.center) ++(0,\paperheight/2-\edgemargin-\paperwidth/2+\edgemargin+\logowidth/2) node (helper logo) {};
-    \node[anchor=north] at (helper logo) {\includegraphics[width=\logowidth]{figures/logo}};
+    \node[anchor=north] at (helper logo) {\qrcode[level=M,height=\qrheight]{1Cztx5mPohZ1LcG7QQcLcZxeaLKGW2RFdW}};
     % qr code
 \draw (current page.center) 
   ++(0,-\paperheight/2+\edgemargin+\paperwidth/2-\edgemargin-\qrheight/2) 
@@ -52,17 +52,14 @@
 \node[anchor=south] at (helper qr) 
   {\qrcode[level=M,height=\qrheight]{BEGIN:VCARD
 VERSION:3.0
-N:John;Doe;;Mr.
-FN:Mr. John Doe
-TITLE:CEO Doe Enterprises
-ORG:Doe Enterprises
-PHOTO;VALUE=URI;TYPE=JPEG:https://johndoe.com/path/to/jpeg/images.jpeg
-TEL;TYPE=MOBILE:+1 781 555 1212
-EMAIL:me@johndoe.com
-URL:https://johndoe.com
+N:Lucrèce;Næss;;Mrs.
+FN:Mrs. Lucrèce Skylar Næss
+TITLE:Freelancer
+ORG:Freelance
+PHOTO;VALUE=URI;TYPE=PNG:https://avatars3.githubusercontent.com/u/28126423
+EMAIL:lucrecenaess@airmail.cc
+URL:https://lucynaess.github.io/
 REV:2017-29-01T13:52:43Z
-BDAY:19880310
-ADR;TYPE=WORK,PREF:;;2 Some Avenue;Anytown;SF;11111;USA
 END:VCARD}};
   \end{tikzpicture}
   \vspace*{\fill}
