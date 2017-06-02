@@ -40,7 +40,7 @@ inkscape --without-gui --export-area-drawing --file=logo.svg --export-pdf=logo.p
 License
 -------
 
-GNU GPLv3. See LICENSE file.
+GNU GPLv3. See [LICENSE](LICENSE) file.
 
 © 2017 Olivier Pieters
 
